@@ -304,7 +304,7 @@ var defaultPartitions = endpoints.Partitions{
 			},
 		},
 		RegionRegex:    partitionRegexp.AwsCn,
-		IsRegionalized: true,
+		IsRegionalized: false,
 		PartitionEndpoint: "aws-cn-global",
 		Endpoints: endpoints.Endpoints{
 			endpoints.EndpointKey{
