@@ -305,13 +305,16 @@ var defaultPartitions = endpoints.Partitions{
 		},
 		RegionRegex:    partitionRegexp.AwsCn,
 		IsRegionalized: true,
+		PartitionEndpoint: "aws-cn-global",
 		Endpoints: endpoints.Endpoints{
 			endpoints.EndpointKey{
-				Region: "cn-north-1",
-			}: endpoints.Endpoint{},
-			endpoints.EndpointKey{
-				Region: "cn-northwest-1",
-			}: endpoints.Endpoint{},
+				Region: "aws-cn-global",
+			}: endpoints.Endpoint{
+				Hostname: "sts.cn-northwest-1.amazonaws.com.cn",
+				CredentialScope: endpoints.CredentialScope{
+					Region: "cn-northwest-1",
+				},
+			},
 		},
 	},
 	{
