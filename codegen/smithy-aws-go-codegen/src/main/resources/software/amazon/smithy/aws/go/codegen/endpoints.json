@@ -13870,9 +13870,14 @@
       },
       "sts" : {
         "endpoints" : {
-          "cn-north-1" : { },
-          "cn-northwest-1" : { }
-        }
+          "aws-cn-global" : {
+            "credentialScope" : {
+              "region" : "cn-northwest-1"
+            },
+            "hostname" : "sts.cn-northwest-1.amazonaws.com.cn"
+          }
+        },
+        "partitionEndpoint" : "aws-cn-global"
       },
       "support" : {
         "endpoints" : {
